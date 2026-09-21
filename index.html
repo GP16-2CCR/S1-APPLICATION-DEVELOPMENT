@@ -13,7 +13,7 @@
     <div class="inicio">
         <h1>Grass IA</h1>
         <h2>Bem-vindo ao GrassIA</h2>
-        <p>O GrassIA é uma aplicação inovadora para a gestão eficiente de áreas verdes, 
+        <p>O GrassIA é uma aplicação inovadora para a gestão eficiente de áreas verdes,
         <br/>utilizando inteligência artificial para otimizar o cuidado e manutenção dos espaços verdes urbanos.</p>
     </div>
     <div class="Cadastros">
@@ -21,14 +21,14 @@
         <form id="cadastroUsuario">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Ex: João Silva" required>
-            
+
             <label for="veiculo">Cargo:</label>
             <select>
                 <option value="Roçador">Roçador</option>
                 <option value="Inspetor">Inspetor</option>
                 <option value="Gestor">Gestor</option>
             </select>
-            
+
             <label for="idade">Idade:</label>
             <input type="text" id="idade" placeholder="Ex: 30" required>
 
@@ -49,17 +49,54 @@
             <h1>Cadastro Veículo</h1>
             <label for="nome">Nome do condutor:</label>
             <input type="text" id="nome" placeholder="Ex: João Silva" required>
-            
+
             <label for="marca">Marca do veiculo:</label>
             <input type="text" id="marca" placeholder="Ex: Ford" required>
-            
+
             <label for="placa">Placa do Veículo:</label>
             <input type="text" id="placa" placeholder="ABC-1234" required>
-            
+
             <button type="submit">Registar Veículo</button>
         </form>
         <img src="./assets/logoIA.png" alt="logo">
 
     </div>
+
+    <div class="Monitoramento">
+        <h1>Monitoramento de Vegetação nas Rodovias</h1>
+        <p>Classificação automática por faixa de altura, com indicação da ação recomendada para cada ponto monitorado.</p>
+
+        <div id="resumoMonitoramento" class="resumoMonitoramento">
+            <!-- Cards de resumo gerados dinamicamente via JS -->
+        </div>
+
+        <h2>Registrar novo ponto monitorado</h2>
+        <form id="formMonitoramento">
+            <label for="localizacaoPonto">Localização:</label>
+            <input type="text" id="localizacaoPonto" placeholder="Ex: Km 32 - Rodovia BR-101" required>
+
+            <label for="alturaPonto">Altura da vegetação (cm):</label>
+            <input type="number" id="alturaPonto" placeholder="Ex: 45" min="0" required>
+
+            <button type="submit">Adicionar Ponto</button>
+        </form>
+
+        <h2>Painel de Pontos Monitorados</h2>
+        <table class="tabelaMonitoramento">
+            <thead>
+                <tr>
+                    <th>Localização</th>
+                    <th>Altura da vegetação</th>
+                    <th>Classificação</th>
+                    <th>Ação recomendada</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabelaMonitoramento">
+                <!-- Linhas geradas dinamicamente via JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
