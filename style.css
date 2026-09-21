@@ -1,3 +1,4 @@
+/* STYLES SPRINT 2 */
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
     text-align: center;
     color: white;
     font-family: "Sora", sans-serif;
-    
+
 }
 
 .inicio h1{
@@ -61,13 +62,13 @@
     font-weight: bold;
 }
 
-.Cadastros #cadastroUsuario input, 
+.Cadastros #cadastroUsuario input,
 .Cadastros #cadastroUsuario select,
 .Cadastros #cadastroVeiculo input,
 .Cadastros #cadastroVeiculo select {
-    
-    display: block;       
-    width: 100%;          
+
+    display: block;
+    width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -101,4 +102,141 @@ img{
     background: white;
     border-radius: 100px;
     max-width: 300px;
+}
+
+/* STYLES SPRINT 3 */
+.Monitoramento{
+    background: #f4f7f5;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    font-family: "Sora", sans-serif;
+    color: #1e2a24;
+}
+
+.Monitoramento h1{
+    color: #2D7A4F;
+    margin-bottom: 10px;
+}
+
+.Monitoramento h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #2D7A4F;
+}
+
+.Monitoramento form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.Monitoramento label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.Monitoramento input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Cards de resumo por nível de risco */
+.resumoMonitoramento{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cardResumo{
+    flex: 1;
+    min-width: 120px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.cardResumo h3{
+    font-size: 28px;
+}
+
+.cardResumo p{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Tabela de pontos monitorados */
+.tabelaMonitoramento{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.tabelaMonitoramento th, .tabelaMonitoramento td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabelaMonitoramento th{
+    background: #2D7A4F;
+    color: white;
+}
+
+/* Badge de classificação dentro da tabela */
+.badge{
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Cores por nível de risco - usadas em linhas, cards e badges */
+.normal{
+    background-color: #2D7A4F; /* verde - seguro */
+}
+
+.atencao{
+    background-color: #E0A800; /* amarelo/laranja - próximo do limite */
+}
+
+.risco{
+    background-color: #E85D04; /* laranja forte - necessita intervenção programada */
+}
+
+.critico{
+    background-color: #C1121F; /* vermelho - intervenção imediata */
+}
+
+.desconhecido{
+    background-color: #6c757d; /* cinza - dado inconsistente */
+}
+
+/* Realce sutil na linha da tabela conforme o risco (fundo claro) */
+tr.normal{
+    background-color: rgba(45, 122, 79, 0.08);
+}
+
+tr.atencao{
+    background-color: rgba(224, 168, 0, 0.12);
+}
+
+tr.risco{
+    background-color: rgba(232, 93, 4, 0.12);
+}
+
+tr.critico{
+    background-color: rgba(193, 18, 31, 0.12);
 }

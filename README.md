@@ -4,7 +4,7 @@ O **GrassIA** é uma aplicação voltada para a gestão eficiente de espaços ve
 
 ---
 
-# Sobre o Projeto
+## Sobre o Projeto
 
 O projeto consiste em uma interface web para cadastro de profissionais e veículos envolvidos na manutenção de áreas verdes. Ele foi estruturado para atender diferentes perfis de acesso:
 
@@ -14,31 +14,32 @@ O projeto consiste em uma interface web para cadastro de profissionais e veícul
 
 ---
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5** — Estruturação semântica das páginas de cadastro
 - **CSS3** — Estilização moderna com uso de gradientes e design responsivo
 - **Google Fonts** — Utilização das fontes Sora e Montserrat para uma interface limpa
+- **Java Script** - Manipulação do DOM
 
 ---
 
-# Estrutura de Arquivos
+## Estrutura de Arquivos
 
-## `index.html`
+### `index.html`
 
 Contém a estrutura dos formulários de cadastro de usuários e veículos.
 
-## `style.css`
+### `style.css`
 
 Define a identidade visual do projeto, incluindo cores, botões e tipografia.
 
-## `/assets`
+### `/assets`
 
 Pasta destinada a recursos visuais, como o logotipo da aplicação.
 
 ---
 
-# Funcionalidades
+## Funcionalidades
 
 - **Cadastro de Usuários** — Coleta de dados como nome, cargo, idade, CPF, e-mail e senha
 
@@ -48,13 +49,13 @@ Pasta destinada a recursos visuais, como o logotipo da aplicação.
 
 ---
 
-# Identidade Visual
+## Identidade Visual
 
 A aplicação utiliza um gradiente moderno que transita entre o verde (`#2D7A4F`) e o roxo (`#6B2FA0`), simbolizando a união entre a natureza (áreas verdes) e a tecnologia (IA).
 
 ---
 
-# Informações do Projeto
+## Informações do Projeto
 
 - **Grupo:** GP16 (Motiva)
 - **Instituição:** FIAP - 2026
